@@ -27,7 +27,7 @@ public class OyuncuKontrol : MonoBehaviour
             GameObject go = Instantiate(mermi, MermiPos.position, MermiPos.rotation) as GameObject;
             GameObject goPatlama = Instantiate(patlama, MermiPos.position, MermiPos.rotation) as GameObject;
 
-            go.GetComponent<Rigidbody>().velocity = MermiPos.transform.forward * 100f;
+            go.GetComponent<Rigidbody>().velocity = MermiPos.transform.forward * 10f;
             Destroy(go.gameObject, 2f);
             Destroy(goPatlama.gameObject, 2f);
 
